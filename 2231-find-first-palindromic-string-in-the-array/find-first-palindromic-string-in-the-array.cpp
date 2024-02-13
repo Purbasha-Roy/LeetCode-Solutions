@@ -4,13 +4,11 @@ public:
         int start=0;
         int end=word.size()-1;
         while(start<=end){
-            if(word[start]!=word[end]){
-                return false;
-            }
-            else{
+            if(word[start]==word[end]){
                 start++;
                 end--;
             }
+            else return false;
         }
         return true;
     }
