@@ -7,9 +7,7 @@ public:
         for(int i=0;i<nums.size();){
             ans++;
             maxi=nums[i]+k;
-            while(i<nums.size() && nums[i]<=maxi){
-                i++;
-            }
+            while(i<nums.size() && nums[i]<=maxi) i++;
         }
         return ans;
     }
